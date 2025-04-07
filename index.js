@@ -15,14 +15,17 @@ $(document).ready(function () {
             let difference = Math.abs(elapsed - targetTime);
             let resultClass;
 
-            if (elapsed == targetTime.toFixed(2)) {
-                    resultClass = "text-success"; }
-            else if (difference <= 0.2) {
-                    resultClass = "text-primary"; }
-            else if (difference <= 0.5) {
-                resultClass = "text-warning"; }
-            else {
-                resultClass = "text-danger"; }
+            if (targetTime.toFixed(2) !== elapsed) {
+                if (difference <= 0.2) {
+                    resultClass = "text-primary";
+                } else if (difference <= 0.5) {
+                    resultClass = "text-warning";
+                } else {
+                    resultClass = "text-danger";
+                }
+            } else {
+                resultClass = "text-success";
+            }
 
 
             $feedback
