@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3 Second Assignment</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+            crossOrigin="anonymous"></script>
+
+</head>
+
+<body class="text-center">
+
+<div class="container-fluid text-center fw-normal text-body">
+        <h1 class="text-center mb-4">Press Button</h1>
+        <h2 class="text-center mb-4">Stop after you think 3 seconds has elapsed</h2>
+    <button id="button" class="btn btn-dark btn-lg">Start</button>
+            <p id="result"></p>
+<br>
+        <h3>Tips</h3>
+            <p>
+                Green means your spot on<br>
+                Blue means your 0.2 seconds off<br>
+                Yellow means your 0.5 seconds off<br>
+                Red means you are not close at all<br>
+            </p>
+</div>
+
+<div class="fw-normal text-body">
+    <button id="attemptsButton" class="btn btn-outline-secondary">Show Attempts</button>
+    <button id="summaryButton" class="btn btn-outline-secondary">Show Summary</button>
+</div>
+
+<div id="attemptsSection" class="fw-normal text-body">
+        <h5>Attempts</h5>
+             <ul id="attemptList" class="list-group"></ul>
+</div>
+
+<div id="summarySection" class="fw-normal text-body">
+         <h5>Summary</h5>
+             <p id="summaryText" class="fw-normal text-body"></p>
+            <div id="summaryChart" class="ct-chart ct-major-tenth mt-3" style="height: 300px;"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+<script src="three.js"></script>
+</body>
+</html>
