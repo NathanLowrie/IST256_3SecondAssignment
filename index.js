@@ -110,5 +110,3 @@ $(document).ready(function () {
         showChart();
     }
 });
-
-//for commit and push purposes
