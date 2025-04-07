@@ -5,7 +5,7 @@ $(document).ready(function () {
     let attempts = [];
     let attemptNumber = 0;
 
-    // Start/Stop Timing
+
     $("#button").on("click", function () {
         let $button = $(this);
         let $feedback = $("#result");
