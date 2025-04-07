@@ -114,4 +114,3 @@ $(document).ready(function () {
     }
 });
 
-// for commit purposes
